@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acharya Narendra Dev College</title>
+    <link rel="icon" href="andc.png">
+
+    <style>
+        div {
+            border: solid;
+        }
+        
+        .header {
+            background-color: aquamarine;
+        }
+        
+        .header img {
+            position: relative;
+            width: 200px;
+            height: 200px;
+        }
+        
+        .header h1 {
+            color: #242582;
+            float: right;
+            width: 1670px;
+            height: 100px;
+            padding-top: 50px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        #wrap {
+            text-transform: uppercase;
+            width: 100%;
+            height: 50px;
+            margin: 0;
+            z-index: 99;
+            position: relative;
+            background-color: aqua;
+        }
+        
+        .navbar {
+            height: 50px;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+        }
+        
+        .navbar li {
+            height: auto;
+            min-width: 140px;
+            float: left;
+            text-align: center;
+            list-style: none;
+            font: normal 12px Arial;
+            padding: 0;
+            margin: 0;
+            background-color: aqua;
+        }
+        
+        .navbar a {
+            font-weight: bold;
+            padding: 18px 0px;
+            text-decoration: none;
+            color: black;
+            display: block;
+        }
+        
+        .navbar li ul {
+            display: none;
+            height: auto;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navbar li:hover ul {
+            display: block;
+        }
+        
+        .navbar li ul li {
+            text-align: center;
+            background-color: aqua;
+        }
+        
+        .navbar li ul li a:hover {
+            background-color: black;
+            color: aqua;
+        }
+        
+        .left {
+            background-color: lightskyblue;
+            float: left;
+            width: 75%;
+        }
+        
+        .left1 {
+            float: left;
+            width: 99.6%;
+            padding-left: 8px;
+        }
+        
+        .left1 h2 {
+            text-align: center;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .right {
+            background-color: lightskyblue;
+            float: left;
+            width: 24.29%;
+        }
+        
+        .right h3 {
+            padding-left: 5px
+        }
+        
+        .right li {
+            padding: 5px;
+            font-weight: bold;
+        }
+        
+        .row img {
+            float: left;
+            padding: 20px;
+        }
+        
+        .row h2 {
+            margin: 15px;
+            color: #242582;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .row p {
+            font-family: cursive;
+            color: crimson;
+            font-style: italic;
+        }
+        
+        footer {
+            background-color: darkblue;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-transform: capitalize;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="images/andc.png" alt="ANDC" />
+        <h1>ACHARYA NARENDRA DEV COLLEGE</h1>
+    </div>
+
+    <div id="wrap">
+        <ul class="navbar">
+            <li id="menu">
+                <a href="#">Home</a>
+            </li>
+            <li id="menu">
+                <a href="#">About</a>
+                <ul>
+                    <li>
+                        <a href="#">Annual Reports</a>
+                        <a href="#">Former Principals</a>
+                        <a href="#">History of College</a>
+                        <a href="#">Principal's Address</a>
+                    </li>
+                </ul>
+            </li>
+            <li id="menu">
+                <a href="#">Admission</a>
+                <ul>
+                    <li>
+                        <a href="#">Cut offs</a>
+                        <a href="#">Fee Structure</a>
+                        <a href="#">Help Desk</a>
+                        <a href="#">Prospectus</a>
+                    </li>
+                </ul>
+            </li>
+            <li id="menu">
+                <a href="#">Reseach</a>
+                <ul>
+                    <li>
+                        <a href="#">Reseach Projects</a>
+                        <a href="#">PG Research</a>
+                        <a href="#">Doctoral Reseach</a>
+                        <a href="#">UG Research</a>
+                        <a href="#">Reseach Publications</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li id="menu">
+                <a href="#">Departments</a>
+                <ul>
+                    <li>
+                        <a href="#">Biomedical Science</a>
+                        <a href="#">Botany</a>
+                        <a href="#">Chemistry</a>
+                        <a href="#">Commerce</a>
+                        <a href="#">Computer Science</a>
+                        <a href="#">Electronics</a>
+                        <a href="#">English</a>
+                        <a href="#">Mathematics</a>
+                        <a href="#">Physics</a>
+                        <a href="#">Zoology</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li id="menu">
+                <a href="#">Courses</a>
+                <ul>
+                    <li>
+                        <a href="#">Undergraduate</a>
+                        <a href="#">Postgraduate</a>
+                        <a href="#">Foreign Languages</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li id="menu">
+                <a href="#">Student's Corner</a>
+                <ul>
+                    <li>
+                        <a href="#">Examination</a>
+                        <a href="#">Orientation</a>
+                        <a href="#">Time-Table</a>
+                        <a href="#">Scholarship</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li id="menu">
+                <a href="#">Achievements</a>
+                <ul>
+                    <li>
+                        <a href="#">Institute</a>
+                        <a href="#">Faculty</a>
+                        <a href="#">Students</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li id="menu">
+                <a href="#">Infrastructure</a>
+                <ul>
+                    <li><a href="#">Admin Block</a>
+                        <a href="#">Library</a>
+                        <a href="#">Laboratory</a>
+                        <a href="#">Computer Facilities</a>
+                        <a href="#">Web Centre</a>
+                        <a href="#">Sports</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li id="menu">
+                <a href="#">Gallery</a>
+                <ul>
+                    <li><a href="#">Alumni</a>
+                        <a href="#">Annual Day </a>
+                        <a href="#">Awards</a>
+                        <a href="#">College Campus</a>
+                        <a href="#">College Life</a>
+                        <a href="#">Library</a>
+                        <a href="#">NSS</a>
+                        <a href="#">Web Centre</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li id="menu">
+                <a href="#">Societies</a>
+                <ul>
+                    <li><a href="#">Leiothrixx</a>
+                        <a href="#">Dhwani</a>
+                        <a href="#">Dhun</a>
+                        <a href="#">Paritantra</a>
+                        <a href="#">Maayra</a>
+                        <a href="#">Tark</a>
+                        <a href="#">Sashakt</a>
+                        <a href="#">NSS</a>
+                        <a href="#">SPICMACAY</a>
+                        <a href="#">Sports</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li id="menu">
+                <a href="#">Contact Us</a>
+                <ul>
+                    <li><a href="https: //www.facebook.com/andcollege1992">Facebook</a>
+                        <a href="principal@andc.du.ac.in">Email</a>
+                        <a href="https://twitter.com/ANDCollege_DU?s=09">Twitter</a>
+                        <a href="https://www.youtube.com/channel/UCVia2DudfU5CD9NdpvoDLCA">Youtube</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <div class="left">
+            <h2>Principal's Address : Prof. Ravi Toteja</h2>
+            <img src="images/principal_drRavi.jpg" alt="principal_drRavi">
+            <p><br>At the very outset I, on behalf of Acharya Narendra Dev College welcome you all to the world where education makes a difference and where education doesn’t mean studying in the classroom but allows you to spread your wings and go beyond
+                the classroom... and helps you for preparing for the future... We at ANDC work effortlessly to instill good values in students and to make them good human beings.</p>
+
+            <p>Acharya Narendra Dev College is 30 years old and through all these years, college has helped to unfold the enormous potentialities of the students and empower them to meet the challenges of the future. Within this short span of journey, we
+                have carved a niche of our own and ANDC is considered as one of the top colleges in India. This is evident from the NAAC score of 3.31 and 18th NIRF-2020 ranking. Besides, India Today and Week rankings are also testimony to this. We have
+                been able to attain these heights primarily because of the untiring hard work of the faculty (both teaching and non-teaching) of the College.We have the best of the teachers who are experts in their respective fields and also very friendly
+                towards students. Students do not hesitate to approach them whether it’s for their personal problems or any problem related to academics. Student council of the college has members elected from amongst the students who act as a link between
+                students and the administration.</p>
+
+            <p>The College has one of the best infrastructure and research facilities for students and faculty in University of Delhi. Our pedagogy is student centric. The College provide ample opportunities for students to excel in both academics and co-curricular
+                activities like theatre, sports and NSS. Our college is Wi-Fi enabled, boasts of a well-equipped library, provides RFID enabled ID cards to students and issues laptops to them for their use. Other facilities in the college include a women’s
+                development cell, excursions (EXPLORE), business incubator etc. Make best use of these opportunities and empower yourself to face the future with confidence.</p>
+
+            <p>I wish great success to each one of you and promise to provide the best environment for your academic journey towards excellence.</p>
+        </div>
+
+        <div class="right">
+            <h2><b>Notices:</b></h2>
+            <marquee behavior="scroll" scrollamount="15" height="612px" direction="up" onmouseover="this.stop();" onmouseout="this.start();">
+                <ul>
+                    <li><a href="#">Office Order 2 September</a></li>
+                    <li><a href="#">Academic Calender</a></li>
+                    <li><a href="#">Regarding Document Verification</a></li>
+                    <li><a href="#">Fee Submission new date</a></li>
+                    <li><a href="#">Vacancies list</a></li>
+                    <li><a href="#">Skill development Workshop</a></li>
+                    <li><a href="#">Notice regarding Examination form for I year students</a></li>
+                    <li><a href="#">Notice regarding Annual Magazine</a></li>
+                    <li><a href="#">Rescheduling of the Walk-in-Interview</a></li>
+                    <li><a href="#">Candidates are invited for Walk-in-Interview</a></li>
+                    <li><a href="#">Notice regarding the Degree for the passout students</a></li>
+                    <li><a href="#">Degree Notice - 2nd July 2021</a></li>
+                    <li><a href="#">Library will remain open on all working days</a></li>
+                    <li><a href="#">World Environment Day Event - 5th June 2021</a></li>
+                    <li><a href="#">Corrigendum regarding DC Arora Memorial Scholarship</a></li>
+                </ul>
+            </marquee>
+        </div>
+    </div>
+
+    <div class="left1">
+        <h2>Gallery</h2>
+        <img width="33%" src="images/andc1.jpg" alt="">
+        <img width="33%" src="images/andc2.jpg" alt="">
+        <img width="33%" src="images/andc3.jpg" alt="">
+        <img width="33%" src="images/andc4.jpg" alt="">
+        <img width="33%" src="images/andc5.jpg" alt="">
+        <img width="33%" src="images/andc6.jpg" alt="">
+        <img width="33%" src="images/andc7.jpg" alt="">
+        <img width="33%" src="images/andc8.jpg" alt="">
+        <img width="33%" src="images/andc9.jpg" alt="">
+        <img width="33%" src="images/andc10.jpg" alt="">
+        <img width="33%" src="images/andc11.jpg" alt="">
+        <img width="33%" src="images/andc12.jpg" alt="">
+    </div>
+
+    <div>
+        <footer>
+            <b>© Copyright 2021 Acharya Narendra Dev College.
+                <br>Follow us on:
+                <a href="https://www.facebook.com/andcollege1992"><img src="images/facebookwebd.png" alt="facebook"
+                        style="width: 1.4%; height: auto;"></a>
+                <a href="https://twitter.com/ANDCollege_DU?s=09"><img src="images/twitter.png" alt="twitter"
+                        style="width: 1.4%;"></a>
+                <a href="https://www.youtube.com/channel/UCVia2DudfU5CD9NdpvoDLCA"><img src="images/youtubewebd.png"
+                        alt="youtube" style="width: 1.4%;"></a>
+            </b>
+        </footer>
+    </div>
+
+</body>
+
+</html>
