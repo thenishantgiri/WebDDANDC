@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Document</title>
+
+
+    </head>
+    <style>
+        body {
+            background-color: blueviolet;
+        }
+
+        #popo {
+            box-sizing: border-box;
+            width: 300px;
+            height: 300px;
+            border: 1px solid white;
+            margin: 20px;
+        }
+
+        #data {
+            padding: 10px;
+            margin: 20px;
+        }
+
+        h2 {
+            color: white;
+        }
+    </style>
+
+
+    <body>
+        <center>
+            <h2>Random Colour Box</h2>
+            <div id="popo"></div>
+            <button onclick="func()">change the backgroundColor</button><br>
+            <label id="textlabel">
+                <input type="text" id="data" value="some random text">
+
+            </label>
+        </center>
+
+        <script>
+            var i = 0;
+            function func() {
+                var set = setInterval(changeColor, 3000);
+
+            }
+            function changeColor() {
+                var random = document.getElementById("popo");
+                var color = ["yellow", "blue", "orange", "green", "aqua", "aquamarine", "red"];
+                random.style.backgroundColor = color[i];
+                i = (i + 1) % color.length;
+            }
+            function changeSize() {
+                var labeltext = document.getElementById("textlabel");
+                labeltext.style.fontSize = "40px";
+                labeltext.innerHTML = document.getElementById("data").value;
+            }
+            setTimeout(changeSize, 3000);
+        </script>
+    </body>
+
+</html>

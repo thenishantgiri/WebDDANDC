@@ -1,0 +1,23 @@
+<script>
+    var username = window.prompt("Enter Your Name ?")
+    var cookiefound = false;
+    var start = 0, end = 0;
+    var clength = 0;
+    var ccookie = document.cookie;
+    while (clength <= ccookie.length) {
+        start = clength;
+        end = start + username.length;
+        if (ccookie.substring(start, end) == username) {
+            cookiefound = true;
+            break;
+        }
+        clength++;
+    }
+    if (cookiefound) {
+        alert("Welcome Back : " + username)
+    }
+    else {
+        document.cookie = username + "=" + username + ";max-age=" + (60 * 60 * 24)
+        alert("Welcome : " + username)
+    }
+</script>
