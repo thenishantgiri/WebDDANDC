@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Student Details Form</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .h1 {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+
+            textarea {
+                resize: none;
+            }
+
+            input[type=text],
+            textarea,
+            input[type=option] {
+                width: 100%;
+                box-sizing: border-box;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                float: inline-end;
+            }
+
+            input[type=submit] {
+                background-color: green;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+            }
+
+            select {
+                width: 100%;
+                padding: 16px 20px;
+                border: none;
+                border-radius: 4px;
+            }
+
+            input[type=submit]:hover {
+                opacity: 0.5;
+                cursor: pointer;
+            }
+
+            .container {
+                background-color: #f2f2f2;
+                padding: 10px;
+            }
+
+            .container h1 {
+                color: darkblue;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Student Details Form</h1>
+            <form action="report.php" method="post" enctype="multipart/form-data">
+                <label for="name"> Name </label>
+                <input type="text" name="name" size="15"> <br> <br>
+
+                <label for="roll"> Roll Number: </label>
+                <input type="text" name="roll" size="15"> <br> <br>
+
+                <label for="email"> Email: </label>
+                <input type="text" name="email"> <br> <br>
+
+                <label for="age">Age:</label>
+                <input type="text" name="age" size="2" maxlength="3"> <br> <br>
+
+                <label for="gender">Gender :</label>
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+                <input type="radio" name="gender" value="Othe"> Other <br> <br> <br>
+
+                <label for="societies[]">Societies: </label>
+                <input type="checkbox" name="socie[]" value="Dhun">Dhun
+                <input type="checkbox" name="socie[]" value="Dhwani">Dhwani
+                <input type="checkbox" name="socie[]" value="Leiothrixx">Leiothrixx
+                <input type="checkbox" name="socie[]" value="Maayra">Maayra
+                <input type="checkbox" name="socie[]" value="NSS">NSS
+                <input type="checkbox" naname="socie[]" value="Paritantra">Paritantra
+                <input type="checkbox" name="socie[]" value="PICFIE">PICFIE
+                <input type="checkbox" name="socie[]" value="SPICMACAY">SPICMACAY
+                <input type="checkbox" name="socie[]" value="Sashakt">Sashakt
+                <input type="checkbox" name="socie[]" value="Tark">Tark <br> <br> <br>
+
+                <label class="select" for="course">Course:</label>
+                <select name="course">
+                    <option value="NULL" selected>Choose your option...</option>
+                    <option value="BiomedicalScience">Biomedical Science</option>
+                    <option value="Botany">Botany</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Commerce">Commerce</option>
+                    <option value="ComputerScience">Computer Science</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="English">English</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Physics">Physics</option>
+                    <option value="Zoology"">Zoology</option>
+            </select> <br> <br>
+
+            <label for=" address">Address:</label><br>
+                        <textarea cols="80" rows="5" name="address"></textarea>
+
+                        <label for="image">Photo:</label>
+                        <input type="file" name="image"> <br> <br>
+
+                        <input type="submit" value="Submit"> <br> <br>
+            </form>
+        </div>
+
+    </body>
+
+</html>

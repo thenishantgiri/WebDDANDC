@@ -1,0 +1,47 @@
+<html>
+
+    <head>
+        <title>PHP login</title>
+        <style>
+            body {
+                background-color: rgba(51, 146, 223, 0.4);
+            }
+
+            #frm {
+                width: 20%;
+                border-radius: 10px;
+                margin: 100px auto;
+                background: white;
+                padding: 50px;
+            }
+
+            #btn {
+                color: #fff;
+                background: #337ab7;
+                padding: 7px;
+                border-radius: 4px;
+                border: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="frm">
+            <h1>Login</h1>
+            <form name="f1" action="login.php" method="POST">
+                <p>
+                    <label> Username: </label>
+                    <input type="text" id="user" name="user" />
+                </p>
+                <p>
+                    <label> Password: </label>
+                    <input type="password" id="pass" name="pass" />
+                </p>
+                <p>
+                    <input type="submit" id="btn" value="Submit" />
+                </p>
+            </form>
+        </div>
+    </body>
+
+</html>
